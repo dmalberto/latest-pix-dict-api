@@ -23,4 +23,4 @@ async def main():
     df = requests.get(
         'https://api.github.com/repos/bacen/pix-dict-api/releases').json()[0]
 
-    return json.dumps({"status": 200, "version": df['tag_name']})
+    return json.dumps({'status': 200, 'version': df['tag_name']})
